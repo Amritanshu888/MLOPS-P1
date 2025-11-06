@@ -6,7 +6,7 @@
 2. Data Validation(Here we need to check the schema of the input we are getting). Whenever we get the new test data to test our model that schema needs to be validated.
 3. Data Transformation  ---> We perform Feature Engineering , Data Preprocessing
 4. Model Trainer
-5. Model Evaluation -> MLFLOW, Dagshub
+5. Model Evaluation -> MLFLOW, Dagshub : Go to Dagshub ---> click create ---> there u have a option to connect a repository(bcoz in github i already have my repository)
 
 ## The above are 4 major important steps in any End to End Data Science Project
 ## These modules needs to be created in form of pipeline so that it runs one after the other

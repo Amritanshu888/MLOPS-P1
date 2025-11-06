@@ -21,3 +21,9 @@ model_trainer:
    test_data_path: artifacts/data_transformation/test.csv
    model_name: model.joblib    ## after we train our model --> with what file name we need to save it. joblib --> is a serialization technique which helps u to save the model in form of a file(in ur hard-disk) so that for the inferencing purpose u can get that file and do it
    ## There are two ways : joblib and pickle
+
+model_evaluation:
+   root_dir: artifacts/model_evaluation  ## The root directory that we need to create
+   test_data_path: artifacts/data_transformation/test.csv  ## Then we have our test data path --> test data path is required to do model evaluation and to calculate the metrics
+   model_path: artifacts/model_trainer/model.joblib  ## Also require model_path as input so that i can load the model and do the prediction
+   metric_file_name: artifacts/model_evaluation/metrics.json   ## Finally i also create a metric file , and metric file will be created in the form of json which will be stored inside the model evaluation folder
